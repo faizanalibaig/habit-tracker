@@ -1,0 +1,12 @@
+export default function Welcome() {
+  return (
+    <main className='flex-1 flex flex-col gap-6 sm:gap-8 justify-center items-center text-white'>
+      <h1 className='text-6xl sm:text-8xl font-serif font-bold'>
+        Habit Tracker
+      </h1>
+      <button className='px-5 py-3 bg-white text-lg text-[#2F5249] font-sans font-semibold rounded-full'>
+        Get Started
+      </button>
+    </main>
+  );
+}

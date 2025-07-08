@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { DM_Sans, EB_Garamond } from 'next/font/google';
 import './globals.css';
 
+import { Analytics } from '@vercel/analytics/next';
+import { global } from '../data';
+
 const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-dm-sans',
@@ -13,8 +16,8 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'Habit Tracker',
-  description: 'Track your habits effectively',
+  title: `${global.metadata.title}`,
+  description: `${global.metadata.description}`,
 };
 
 export default function RootLayout({
@@ -24,8 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${dmSans.variable} ${ebGaramond.variable} font-sans`}>
+      <body className={`${dmSans.variable} ${ebGaramond.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
