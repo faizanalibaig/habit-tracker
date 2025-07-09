@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --vh: 1vh;
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --vh: 1dvh;
+  }
+}
+
+@layer utilities {
+  .h-screen-mobile {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .min-h-screen-mobile {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
