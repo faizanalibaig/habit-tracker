@@ -1,11 +1,10 @@
-import { InsertHabits } from '../../components';
+import { InsertHabitHeader, InsertHabits } from '../../components';
 
-function page() {
+export default function page() {
   return (
-    <div className='flex justify-center items-center h-screen px-5 sm:p-0'>
+    <main className='h-dvh flex flex-col'>
+      <InsertHabitHeader />
       <InsertHabits />
-    </div>
+    </main>
   );
 }
-
-export default page;
