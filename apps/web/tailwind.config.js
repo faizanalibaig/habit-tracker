@@ -12,6 +12,10 @@ export default {
         sans: ['var(--font-dm-sans)', 'sans-serif'],
         serif: ['var(--font-eb-garamond)', 'serif'],
       },
+      colors: {
+        primary: '#2F5249',
+        secondary: '#F5F5F5',
+      },
     },
   },
   plugins: [],
