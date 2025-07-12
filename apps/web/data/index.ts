@@ -18,9 +18,9 @@ export interface Metadata {
   description: string;
 }
 
-import aboutData from './about.json';
-import notFoundData from './not-found.json';
-import metaData from './metadata.json';
+import aboutData from "./about.json";
+import notFoundData from "./not-found.json";
+import metaData from "./metadata.json";
 
 export const about = aboutData as About;
 export const notFound = notFoundData as NotFoundData;
@@ -28,7 +28,7 @@ export const metadata = metaData as Metadata;
 
 export const global = {
   about,
-  'not-found': notFound,
+  "not-found": notFound,
   metadata,
 };
 

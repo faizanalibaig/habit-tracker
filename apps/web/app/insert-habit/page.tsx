@@ -1,8 +1,8 @@
-import { InsertHabitHeader, InsertHabits } from '../../components';
+import { InsertHabitHeader, InsertHabits } from "../../components";
 
 export default function page() {
   return (
-    <main className='h-dvh flex flex-col'>
+    <main className="h-dvh flex flex-col">
       <InsertHabitHeader />
       <InsertHabits />
     </main>
