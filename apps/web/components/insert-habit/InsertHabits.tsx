@@ -31,6 +31,7 @@ export default function InsertHabits() {
         goal: parsedGoal,
         progress: {},
         achieved: 0,
+        completedDates: [],
       };
 
       const storedHabits = localStorage.getItem('habits');
